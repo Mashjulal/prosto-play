@@ -1,0 +1,3 @@
+TODO: show already added songs
+TODO: several playlists
+TODO: add settings: ask me to save song on storage

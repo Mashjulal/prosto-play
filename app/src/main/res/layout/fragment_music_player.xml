@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/screen_background_dark_transparent"
+    android:gravity="bottom"
+    android:weightSum="1"
+    tools:context="com.mashjulal.android.prostoplay.MusicPlayerFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <SeekBar
+            android:id="@+id/fragment_music_player_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:foregroundGravity="left"
+            android:maxHeight="15dip"
+            android:minHeight="15dip"
+            android:paddingBottom="0dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:paddingStart="5dp"
+            android:paddingTop="0dp"
+            android:progressDrawable="@drawable/progress_drawable"
+            android:thumb="@android:color/transparent"
+            android:thumbOffset="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fragment_music_player_seekBar"
+            android:background="@color/colorPlayerBackground"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/fragment_music_player_btn_prev"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_prev" />
+
+            <ImageButton
+                android:id="@+id/fragment_music_player_btn_play"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="54dp"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/fragment_music_player_btn_next"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_next" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fragment_music_player_tv_song_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fragment_music_player_tv_artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

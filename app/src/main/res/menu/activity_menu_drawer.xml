@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/activity_menu_drawer_my_playlist"
+            android:icon="@drawable/ic_action_playlist"
+            android:title="My playlist" />
+        <item
+            android:id="@+id/activity_menu_drawer_search"
+            android:icon="@drawable/ic_action_search"
+            android:title="Search" />
+    </group>
+
+</menu>
